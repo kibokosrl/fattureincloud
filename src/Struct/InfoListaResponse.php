@@ -2,26 +2,23 @@
 
 namespace Svbk\FattureInCloud\Struct;
 
-use Svbk\FattureInCloud\Date;
-use Svbk\FattureInCloud\DateTime;
-
 /**
- * Rappresenta la richiesta per la creazione di un nuovo articolo fattura 
+ * Rappresenta la richiesta per la creazione di un nuovo articolo fattura.
  *
  * @package fattureincloud
  * @subpackage InfoListaResponse
  * @author Brando Meniconi <b.meniconi@silverbackstudio.it>
  * @since 1.0
  */
-class InfoListaResponse extends Response {
-
+class InfoListaResponse extends Response
+{
     /**
      * Request Success.
      *
      * @access public
      * @var boolean
      */
-	public $success;
+    public $success;
 
     /**
      * opzionale. Nome o ragione sociale dell'azienda.
@@ -29,7 +26,7 @@ class InfoListaResponse extends Response {
      * @access public
      * @var string
      */
-	public $nome;
+    public $nome;
 
     /**
      * opzionale. Numero di giorni rimanenti per la licenza attiva.
@@ -37,7 +34,7 @@ class InfoListaResponse extends Response {
      * @access public
      * @var integer
      */
-	public $durata_licenza;
+    public $durata_licenza;
 
     /**
      * opzionale. Tipo di licenza attiva = ['prova' o 'standard' o 'premium'].
@@ -45,7 +42,7 @@ class InfoListaResponse extends Response {
      * @access public
      * @var string
      */
-	public $tipo_licenza;
+    public $tipo_licenza;
 
     /**
      * opzionale. Lista delle valute supportate.
@@ -53,7 +50,7 @@ class InfoListaResponse extends Response {
      * @access public
      * @var InfoValuta[]
      */
-	public $lista_valute;
+    public $lista_valute;
 
     /**
      * opzionale. Lista delle aliquote iva.
@@ -61,7 +58,7 @@ class InfoListaResponse extends Response {
      * @access public
      * @var InfoIva[]
      */
-	public $lista_iva;
+    public $lista_iva;
 
     /**
      * opzionale. (Array) Lista delle nazioni supportate per la fatturazione.
@@ -69,7 +66,7 @@ class InfoListaResponse extends Response {
      * @access public
      * @var string
      */
-	public $lista_paesi;
+    public $lista_paesi;
 
     /**
      * opzionale. Lista dei template dei documenti (fatture, ordini, preventivi, ricevute, ndc, proforma).
@@ -77,7 +74,7 @@ class InfoListaResponse extends Response {
      * @access public
      * @var InfoTemplate[]
      */
-	public $lista_template;
+    public $lista_template;
 
     /**
      * opzionale. Lista dei template dei DDT.
@@ -85,7 +82,7 @@ class InfoListaResponse extends Response {
      * @access public
      * @var InfoTemplate[]
      */
-	public $lista_template_ddt;
+    public $lista_template_ddt;
 
     /**
      * opzionale. Lista dei template delle fatture accompagnatorie.
@@ -93,7 +90,7 @@ class InfoListaResponse extends Response {
      * @access public
      * @var InfoTemplate[]
      */
-	public $lista_template_ddt_ftacc;
+    public $lista_template_ddt_ftacc;
 
     /**
      * opzionale. Lista dei conti.
@@ -101,14 +98,13 @@ class InfoListaResponse extends Response {
      * @access public
      * @var InfoConto[]
      */
-	public $lista_conti;
-	
+    public $lista_conti;
+
     /**
      * opzionale. Lista dei metodi di pagamento.
      *
      * @access public
      * @var InfoMetodo[]
      */
-	public $lista_metodi_pagamento;
-
+    public $lista_metodi_pagamento;
 }
