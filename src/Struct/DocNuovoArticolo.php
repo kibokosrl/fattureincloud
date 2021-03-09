@@ -2,28 +2,25 @@
 
 namespace Svbk\FattureInCloud\Struct;
 
-use Svbk\FattureInCloud\Date;
-use Svbk\FattureInCloud\DateTime;
-
 /**
- * Rappresenta la richiesta per la creazione di un nuovo articolo fattura 
+ * Rappresenta la richiesta per la creazione di un nuovo articolo fattura.
  *
  * @package fattureincloud
  * @subpackage DocNuovoArticolo
  * @author Brando Meniconi <b.meniconi@silverbackstudio.it>
  * @since 1.0
  */
-class DocNuovoArticolo extends Request {
-
+class DocNuovoArticolo extends Request
+{
     /**
-     * opzionale. Identificativo del prodotto (se nullo o mancante, la 
+     * opzionale. Identificativo del prodotto (se nullo o mancante, la
      * registrazione non viene collegata a nessun prodotto presente nell'elenco
      * prodotti).
      *
      * @access public
      * @var string
      */
-	public $id;
+    public $id;
 
     /**
      * opzionale. Codice prodotto.
@@ -31,7 +28,7 @@ class DocNuovoArticolo extends Request {
      * @access public
      * @var string
      */
-	public $codice;
+    public $codice;
 
     /**
      * opzionale. Nome articolo.
@@ -39,7 +36,7 @@ class DocNuovoArticolo extends Request {
      * @access public
      * @var string
      */
-	public $nome;
+    public $nome;
 
     /**
      * opzionale. Unità di misura per il prodotto.
@@ -47,7 +44,7 @@ class DocNuovoArticolo extends Request {
      * @access public
      * @var string
      */
-	public $um;
+    public $um;
 
     /**
      * opzionale. Quantità di prodotto.
@@ -55,7 +52,7 @@ class DocNuovoArticolo extends Request {
      * @access public
      * @var double
      */
-	public $quantita;
+    public $quantita;
 
     /**
      * opzionale. Descrizione del prodotto.
@@ -63,7 +60,7 @@ class DocNuovoArticolo extends Request {
      * @access public
      * @var string
      */
-	public $descrizione;
+    public $descrizione;
 
     /**
      * opzionale. Categoria del prodotto (utilizzata per il piano dei conti).
@@ -71,34 +68,34 @@ class DocNuovoArticolo extends Request {
      * @access public
      * @var string
      */
-	public $categoria;
+    public $categoria;
 
     /**
-     * opzionale. Prezzo unitario netto (IVA esclusa) [Obbligatorio se 
+     * opzionale. Prezzo unitario netto (IVA esclusa) [Obbligatorio se
      * prezzi_netti!=true].
      *
      * @access public
      * @var double
      */
-	public $prezzo_netto;
+    public $prezzo_netto;
 
     /**
-     * opzionale. Prezzo unitario lordo (comprensivo di IVA) [Obbligatorio se 
+     * opzionale. Prezzo unitario lordo (comprensivo di IVA) [Obbligatorio se
      * prezzi_ivati=true].
      *
      * @access public
      * @var double
      */
-	public $prezzo_lordo;
+    public $prezzo_lordo;
 
     /**
-     * . Codice aliquota IVA (ottenibili con il parametro "lista_iva" della 
+     * . Codice aliquota IVA (ottenibili con il parametro "lista_iva" della
      * funzione "/info/account").
      *
      * @access public
      * @var number
      */
-	public $cod_iva;
+    public $cod_iva;
 
     /**
      * opzionale. Indica se l'articolo è imponibile.
@@ -106,7 +103,7 @@ class DocNuovoArticolo extends Request {
      * @access public
      * @var boolean
      */
-	public $tassabile;
+    public $tassabile;
 
     /**
      * opzionale. Sconto (percentuale).
@@ -114,7 +111,7 @@ class DocNuovoArticolo extends Request {
      * @access public
      * @var double
      */
-	public $sconto;
+    public $sconto;
 
     /**
      * opzionale. Indica se a questo articolo vengono applicate ritenute e
@@ -123,7 +120,7 @@ class DocNuovoArticolo extends Request {
      * @access public
      * @var boolean
      */
-	public $applica_ra_contributi;
+    public $applica_ra_contributi;
 
     /**
      * opzionale. Ordine dell'articolo nel documento (ordinamento ascendente da
@@ -132,35 +129,34 @@ class DocNuovoArticolo extends Request {
      * @access public
      * @var integer
      */
-	public $ordine;
+    public $ordine;
 
     /**
-     * opzionale. Se vale 1, evidenzia in rosso l'eventuale sconto in fattura = 
+     * opzionale. Se vale 1, evidenzia in rosso l'eventuale sconto in fattura =
      * ['0' o '1'].
      *
      * @access public
      * @var integer
      */
-	public $sconto_rosso;
+    public $sconto_rosso;
 
     /**
-     * opzionale. Indica se l'articolo è incluso nel ddt (se presente un ddt 
+     * opzionale. Indica se l'articolo è incluso nel ddt (se presente un ddt
      * allegato, altrimenti non è significativo).
      *
      * @access public
      * @var boolean
      */
-	public $in_ddt;
+    public $in_ddt;
 
     /**
-     * opzionale. Indica se viene movimentato il magazzino (true: viene 
-     * movimentato; false: non viene movimentato) [Non influente se il prodotto 
-     * non è collegato all'elenco prodotti, oppure la funzionalità magazzino 
+     * opzionale. Indica se viene movimentato il magazzino (true: viene
+     * movimentato; false: non viene movimentato) [Non influente se il prodotto
+     * non è collegato all'elenco prodotti, oppure la funzionalità magazzino
      * è disattivata].
      *
      * @access public
      * @var boolean
      */
-	public $magazzino;
-
+    public $magazzino;
 }

@@ -2,26 +2,23 @@
 
 namespace Svbk\FattureInCloud\Struct;
 
-use Svbk\FattureInCloud\Date;
-use Svbk\FattureInCloud\DateTime;
-
 /**
- * Rappresenta la risposta alla creazione di un nuovo documento 
+ * Rappresenta la risposta alla creazione di un nuovo documento.
  *
  * @package fattureincloud
  * @subpackage DocNuovoResponse
  * @author Brando Meniconi <b.meniconi@silverbackstudio.it>
  * @since 1.0
  */
-class DocNuovoResponse extends Response {
-
+class DocNuovoResponse extends Response
+{
     /**
      * Request Success.
      *
      * @access public
      * @var boolean
      */
-	public $success;
+    public $success;
 
     /**
      * Identificativo del documento creato.
@@ -29,7 +26,7 @@ class DocNuovoResponse extends Response {
      * @access public
      * @var number
      */
-	public $new_id;
+    public $new_id;
 
     /**
      * Identificativo permanente del documento (rimane lo stesso anche a seguito di modifiche).
@@ -37,5 +34,5 @@ class DocNuovoResponse extends Response {
      * @access public
      * @var string
      */
-	public $token;	
+    public $token;
 }

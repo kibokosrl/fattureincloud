@@ -7,9 +7,13 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Brando Meniconi    ",
+            "name": "Brando Meniconi",
             "email": "b.meniconi@silverbackstudio.it",
             "homepage": "https://github.com/silverbackstudio"
+        }, {
+            "name": "Matteo Schiona",
+            "email": "ms@kiboko.it",
+            "homepage": "https://github.com/kibokosrl"
         }
     ],
     "require": {
