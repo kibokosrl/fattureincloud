@@ -51,7 +51,7 @@ class Client
         return $this->call($type . '/dettagli', $id);
     }
 
-    public function createDoc($type, Struct\DocNuovoRequest|Struct\CorrispettiviNuovoRequest $doc)
+    public function createDoc($type, $doc)
     {
         $response = $this->call($type . '/nuovo', $doc);
 
