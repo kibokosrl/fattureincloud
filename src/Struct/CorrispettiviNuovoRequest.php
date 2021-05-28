@@ -80,7 +80,7 @@ class CorrispettiviNuovoRequest extends Request
      * (Opzionale) Lista delle righe della registrazione.
      *
      * @access public
-     * @var Corrispettivi\Riga\Nuovo[] Lista delle righe della registrazione
+     * @var CorrispettiviNuovoRiga Lista delle righe della registrazione
      */
     public $lista_righe;
 }

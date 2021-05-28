@@ -18,6 +18,7 @@ class Client
     public $http_client;
 
     const TYPE_FATTURA = 'fatture';
+    const TYPE_CORRISPETTIVI = 'corrispettivi';
     const TYPE_PROFORMA = 'proforma';
     const TYPE_ORDINE = 'ordini';
     const TYPE_PREVENTIVO = 'preventivi';

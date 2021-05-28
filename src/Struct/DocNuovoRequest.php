@@ -429,7 +429,7 @@ class DocNuovoRequest extends Request
      * Lista degli articoli/righe del documento,.
      *
      * @access public
-     * @var Doc\Articolo\Nuovo[] Lista degli articoli/righe del documento
+     * @var DocNuovoArticolo[] Lista degli articoli/righe del documento
      */
     public $lista_articoli;
 
@@ -438,7 +438,7 @@ class DocNuovoRequest extends Request
      * pagamento.
      *
      * @access public
-     * @var Doc\Articolo\Nuovo[] Lista degli articoli/righe del documento
+     * @var DocNuovoPagamento[] Lista degli articoli/righe del documento
      */
     public $lista_pagamenti;
 
